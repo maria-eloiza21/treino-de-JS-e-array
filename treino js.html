@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>treino js</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+  <script>
+    //01 função media//
+    function calcularMedia(n1, n2, n3) {
+    var media = (n1 + n2 + n3) / 3;
+    return media;
+}
+var resultado = calcularMedia(21, 12, 10);
+console.log('A média é:', resultado);
+
+//02 algoritmo que leia dois valores//
+function Valores(A, B) {
+    var C;
+    if (A == B) {
+        C = A + B;
+    } else {
+        C = A * B;
+    }
+    return C;
+}
+var resultado1=Valores(22, 22);
+var resultado2=Valores(15, 28);
+console.log('o resultado 1 é:', resultado1);
+console.log('o resultado 2 é:', resultado2);
+
+ //03 função salario//
+ function Salario(salario){
+    var aumento = salario * 0.10;
+    return salario + aumento;
+}
+var salarioFinal = Salario(2500);
+console.log('Eloiza seu novo salário é:', salarioFinal);
+
+//04 soma numero posterior
+function SomaeMedia(){
+    var n1=Number(prompt("digite um numero"));
+    var ant=n1-1;
+    var post=n1+1;
+    var soma=ant+n1+post;
+    var media=soma/3;
+console.log("soma:", soma);
+console.log("media:", media);
+}
+SomaeMedia();
+
+// 05 numeros pares de 0 a 100//
+function numerosPares(){
+    for(var i=0; i<=100; i++){
+        if (i%2==0){
+            console.log(i);
+        }
+    }
+}
+numerosPares();
+  </script>
+</body>
+</html>

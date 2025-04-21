@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>treino array</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+    //treino 01 gerente de loja//
+    const produtos = ['camisa', 70, 'calça', 90, 'tenis', 100, 'bone', 40];
+    produtos.unshift('vestido', 55);
+    console.log(produtos);
+
+      //treino 02 contatos//
+      const contatos=[
+     {nome: 'gabriela', numero:'(11) 987654321'},
+     {nome: 'carlos', numero:'(21) 99654-3210'},
+     {nome: 'joana', numero:'(81) 99988-7766'},
+    ];
+    contatos.unshift({ nome: 'ariel', numero: '(31) 98555-6677' });
+    contatos.pop();
+    console.log(contatos);
+
+       //treino 03 agenda//
+       const agendaEscolar = [
+    { dia: 'Segunda-feira', atividade: 'Estudar Matemática das 17:00 às 18:30' },
+    { dia: 'Terça-feira', atividade: 'Estudar Português e redação das 17:00 às 20:00' },
+    { dia: 'Quarta-feira', atividade: 'Estudar História e geografia das 17:00 às 20:30' },
+    { dia: 'Quinta-feira', atividade: 'Estudar sociologia e filosofia das 17:00 às 20:30' },
+    { dia: 'Sexta-feira', atividade: 'Estudar fisica, biologia e quimica das 17:00 às 21:50' },
+    { dia: 'Sábado', atividade: 'Revisão geral das 10:00 às 02:30' },
+    { dia: 'Domingo', atividade: 'Descanso'}
+    ]
+    agendaEscolar.unshift({ dia: 'segunda', atividade: 'Exercícios de Matemática das 19:00 às 20:00' })
+    agendaEscolar.unshift({ aviso:'fazer uma redaçao por semana' })
+    console.log(agendaEscolar);
+</script>
+</body>
+</html> 
